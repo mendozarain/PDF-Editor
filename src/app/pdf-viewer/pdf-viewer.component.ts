@@ -1,5 +1,5 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
-import {  NgxExtendedPdfViewerModule,NgxExtendedPdfViewerService, pdfDefaultOptions } from 'ngx-extended-pdf-viewer';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { NgxExtendedPdfViewerModule, NgxExtendedPdfViewerService, pdfDefaultOptions } from 'ngx-extended-pdf-viewer';
 
 @Component({
   selector: 'app-pdf-viewer',
@@ -25,7 +25,7 @@ export class PdfViewerComponent {
     // Increasing this setting allows your users to use higher zoom factors,
     // trading image quality for performance.
 
-    pdfDefaultOptions.assetsFolder = 'bleeding-edge';
+    pdfDefaultOptions.assetsFolder = 'assets';
     
     }
 }
